@@ -1,0 +1,37 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <style>
+        /* Stylisation du lien pour qu'il ressemble à un bouton */
+        .login-btn {
+            display: inline-block;
+            width: 200px;  /* Largeur du bouton, ajustez selon vos besoins */
+            height: 60px;  /* Hauteur du bouton */
+            border-radius: 5px;
+            overflow: hidden;  /* Cache tout ce qui dépasse du bouton */
+            position: relative;
+        }
+
+        /* Stylisation de l'image pour qu'elle occupe tout le bouton */
+        .login-btn img {
+            width: 100%;  /* Remplir toute la largeur du bouton */
+            height: 100%;  /* Remplir toute la hauteur du bouton */
+            object-fit: cover;  /* Couvrir entièrement le bouton, sans déformer l'image */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue🤗🤗 !</h1>
+
+    <!-- Bouton avec image -->
+    <a href="{{ url_for('login') }}" class="login-btn">
+        <img src="{{ url_for('static', filename='3.png') }}" alt="Login">
+    </a>
+
+   
+</body>
+</html>
